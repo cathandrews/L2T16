@@ -6,17 +6,14 @@ import java.util.Scanner;
 
 public class OrderInput {
   /**
-   * Creates an Order object by prompting the user for input.
+   * Creates an Order object by prompting the user for input, excluding gratuity.
    */
-  public static Order createOrder(Scanner scanner) {
+  public static Order createOrderWithoutGratuity(Scanner scanner) {
     List<Meal> meals = new ArrayList<>();
-
-    // Input: Number of meals
     System.out.print("Enter the number of meals: ");
     int numberOfMeals = scanner.nextInt();
     scanner.nextLine(); // Consume newline
 
-    // Input: Meal details
     for (int i = 0; i < numberOfMeals; i++) {
       System.out.print("Enter meal name: ");
       String mealName = scanner.nextLine();
@@ -29,15 +26,10 @@ public class OrderInput {
       meals.add(new Meal(mealName, mealPrice, mealQuantity));
     }
 
-    // Input: Special instructions
     System.out.print("Enter special instructions: ");
     String specialInstructions = scanner.nextLine();
 
-    // Input: Gratuity amount
-    System.out.print("Enter gratuity amount: R");
-    double gratuity = scanner.nextDouble();
-
-    // Create and return an Order object
-    return new Order(1234, meals, specialInstructions, gratuity);
+    // Create and return an Order object with gratuity set to 0 initially
+    return new Order(1234, meals, specialInstructions, 0);
   }
 }

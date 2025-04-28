@@ -1,18 +1,18 @@
 Order number 1234
 Customer: Bob
 Email: bob@gmail.com
-Phone number: 032-523658
-Location: Port Elizabeth
+Phone number: 07625632587
+Location: Cape Town
 
-You have ordered the following from Hungerz in Port Elizabeth:
+You have ordered the following from KFC in Cape Town:
 
-1 x Burger (R52.25)
+1 x Bucket (R85.56)
 
 Special instructions: Napkins
-Gratuity: R33.57
-Total: R85.82
+Gratuity: R15.00
+Total: R100.56
 
-Ana Ortega is nearest to the restaurant and so he will be delivering your order to you at:
-1 Main Street
+Miranda Metcalfe is nearest to the restaurant and so he will be delivering your order to you at:
+1 Mail Str
 
-If you need to contact the restaurant, their number is 031-235412545.
+If you need to contact the restaurant, their number is 021-53264486.
