@@ -1,18 +1,18 @@
 Order number 1234
-Customer: Cath
-Email: mymail@gmail.com
-Phone number: 075 3662 584
-Location: Durban
+Customer: Bob
+Email: bob@gmail.com
+Phone number: 032-523658
+Location: Port Elizabeth
 
-You have ordered the following from Hunger Busters in Durban:
+You have ordered the following from Hungerz in Port Elizabeth:
 
-1 x Burger and Chips (R12.23)
+1 x Burger (R52.25)
 
-Special instructions: Extra salt
+Special instructions: Napkins
+Gratuity: R33.57
+Total: R85.82
 
-Total: R12.23
+Ana Ortega is nearest to the restaurant and so he will be delivering your order to you at:
+1 Main Street
 
-Eugene Santana is nearest to the restaurant and so he will be delivering your order to you at:
-10 Main Street
-
-If you need to contact the restaurant, their number is 031 -25255466.
+If you need to contact the restaurant, their number is 031-235412545.

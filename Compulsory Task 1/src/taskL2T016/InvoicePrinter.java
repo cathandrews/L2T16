@@ -1,11 +1,16 @@
 package taskL2T016;
 
+import java.text.DecimalFormat;
+
 public class InvoicePrinter {
   /**
-   * Prints the invoice details to the console with additional blank lines.
+   * Prints the invoice details to the console.
    */
   public static void printInvoiceToConsole(Customer customer, Restaurant restaurant, Order order,
       Driver driver) {
+    DecimalFormat df = new DecimalFormat("0.00");
+
+    // Print order and customer details
     System.out.println();
     System.out.println("Order number " + order.getOrderNumber());
     System.out.println("Customer: " + customer.getName());
@@ -15,13 +20,16 @@ public class InvoicePrinter {
     System.out.println("You have ordered the following from " + restaurant.getName() + " in "
         + restaurant.getLocation() + ":\n");
 
+    // Print meal details
     for (Meal meal : order.getMeals()) {
-      System.out.println(meal.getQuantity() + " x " + meal.getName() + " (R"
-          + String.format("%.2f", meal.getPrice()) + ")");
+      System.out.println(
+          meal.getQuantity() + " x " + meal.getName() + " (R" + df.format(meal.getPrice()) + ")");
     }
 
-    System.out.println("\nSpecial instructions: " + order.getSpecialInstructions() + "\n");
-    System.out.println("Total: R" + String.format("%.2f", order.getTotalAmount()) + "\n");
+    // Print special instructions, gratuity, and total amount
+    System.out.println("\nSpecial instructions: " + order.getSpecialInstructions());
+    System.out.println("Gratuity: R" + df.format(order.getGratuity()));
+    System.out.println("Total: R" + df.format(order.getTotalAmount()) + "\n");
     System.out.println(driver.getName()
         + " is nearest to the restaurant and so he will be delivering your order to you at:");
     System.out.println(customer.getAddress() + "\n");
